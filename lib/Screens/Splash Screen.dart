@@ -8,16 +8,14 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blue[800],
       body: AnimatedSplashScreen(
-        splash: Container(
-          child: Center(
-            child: Container(
-              height: 300,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  image: NetworkImage('https://i.ibb.co/SVmqq8d/Logo.jpg')
-                )
-              ),
+        splash: Center(
+          child: Container(
+            height: 300,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              image: DecorationImage(
+                image: NetworkImage('https://i.ibb.co/SVmqq8d/Logo.jpg')
+              )
             ),
           ),
         ),
