@@ -9,9 +9,19 @@ class SplashScreen extends StatelessWidget {
       backgroundColor: Colors.blue[800],
       body: AnimatedSplashScreen(
         splash: Container(
-          child:
-          Center(child: Image.network('https://i.ibb.co/SVmqq8d/Logo.jpg',height: 150,),),
-        ), nextScreen: HomePage(),
+          child: Center(
+            child: Container(
+              height: 300,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  image: NetworkImage('https://i.ibb.co/SVmqq8d/Logo.jpg')
+                )
+              ),
+            ),
+          ),
+        ),
+        nextScreen: HomePage(),
         splashTransition: SplashTransition.slideTransition,
         // pageTransitionType: PageTransitionType.scale,
         backgroundColor: Color(0xFF1565C0),
